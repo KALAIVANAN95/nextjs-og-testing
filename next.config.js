@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
+module.exports = {
+  reactStrictMode: true,
+};
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    formats: ["image/avif", "image/webp"],
+    domains: ["www.one.sg"],
+    minimumCacheTTL: 60,
+  },
+  trailingSlash: true,
+};
